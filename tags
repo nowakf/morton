@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/francis/src/rust/morton/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+Item	src/_set.rs	/^    type Item = &'a mut T;$/;"	t	implementation:SortOnDrop
+Set	src/_set.rs	/^impl From<&[u32]> for Set {$/;"	c
+Set	src/_set.rs	/^impl From<Vec<u32>> for Set {$/;"	c
+Set	src/_set.rs	/^impl FromIterator<(u16, u16)> for Set {$/;"	c
+Set	src/_set.rs	/^impl FromIterator<u32> for Set {$/;"	c
+Set	src/_set.rs	/^impl Set {$/;"	c
+Set	src/_set.rs	/^pub struct Set<T>(Vec<T>) where T: MortonOrd;$/;"	s
+SortOnDrop	src/_set.rs	/^impl<'a, T: Ord + Copy> Drop for SortOnDrop<'a, T> {$/;"	c
+SortOnDrop	src/_set.rs	/^impl<'a, T: Ord + Copy> Iterator for SortOnDrop<'a, T> {$/;"	c
+SortOnDrop	src/_set.rs	/^struct SortOnDrop<'a, T: Ord + Copy>(&'a mut [T], usize);$/;"	s
+decode_2d	src/lib.rs	/^pub fn decode_2d(i: u32) -> (u16, u16) {$/;"	f
+drop	src/_set.rs	/^    fn drop(&mut self) {$/;"	P	implementation:SortOnDrop
+encode_2d	src/lib.rs	/^pub fn encode_2d(x: u16, y: u16) -> u32 { $/;"	f
+from	src/_set.rs	/^    fn from(entries: &[u32]) -> Self {$/;"	P	implementation:Set
+from	src/_set.rs	/^    fn from(mut entries: Vec<u32>) -> Self {$/;"	P	implementation:Set
+from_iter	src/_set.rs	/^    fn from_iter<I: IntoIterator<Item=(u16, u16)>>(iter: I) -> Self {$/;"	P	implementation:Set
+from_iter	src/_set.rs	/^    fn from_iter<I: IntoIterator<Item=u32>>(iter: I) -> Self {$/;"	P	implementation:Set
+get	src/_set.rs	/^    pub fn get(&self, x: u16, y: u16) -> Option<&u32> {$/;"	P	implementation:Set
+get_mut	src/_set.rs	/^    pub fn get_mut(&mut self, x: u16, y: u16) -> Option<&mut u32> {$/;"	P	implementation:Set
+get_second_bits	src/lib.rs	/^fn get_second_bits(x: u32) -> u32 {$/;"	f
+insert	src/_set.rs	/^    pub fn insert(&mut self, x: u16, y: u16) -> Option<&u32> {$/;"	P	implementation:Set
+is_contiguous	src/lib.rs	/^fn is_contiguous(min: u32, max: u32) -> bool {$/;"	f
+it_works	src/lib.rs	/^    fn it_works() {$/;"	f	module:tests
+iter_mut	src/_set.rs	/^    pub fn iter_mut(&mut self) -> impl Iterator<Item=&mut u32> + '_ {$/;"	P	implementation:Set
+next	src/_set.rs	/^    fn next(&mut self) -> Option<Self::Item> {$/;"	P	implementation:SortOnDrop
+range	src/lib.rs	/^pub fn range(p1: (u16, u16), p2: (u16, u16)) -> Vec<(u32, u32)> {$/;"	f
+range_iter	src/lib.rs	/^pub fn range_iter<'a>(p1: (u16, u16), p2: (u16, u16)) -> impl Iterator<Item=Range<u32>> + 'a {$/;"	f
+range_iter	src/lib.rs	/^pub fn range_iter<'a><U1, U2>(p1: (U1, U1), p2: (U1, U1)) -> impl Iterator<Item=Range<U2>> + 'a /;"	f
+range_points	src/lib.rs	/^pub fn range_points(p1: (u16, u16), p2: (u16, u16)) -> Vec<(u16, u16)> {$/;"	f
+remove	src/_set.rs	/^    pub fn remove(&mut self, x: u16, y: u16) -> Option<u32> {$/;"	P	implementation:Set
+split	src/lib.rs	/^fn split(min: u32, max: u32) -> (u32, u32) {$/;"	f
+split_by_second_bits	src/lib.rs	/^fn split_by_second_bits(x: u32) -> u32 {$/;"	f
+test	src/lib.rs	/^mod test {$/;"	n
+test_is_contiguous	src/lib.rs	/^    fn test_is_contiguous() {$/;"	f	module:test
+test_split_msb	src/lib.rs	/^    fn test_split_msb() {$/;"	f	module:test
+tests	src/lib.rs	/^mod tests {$/;"	n
